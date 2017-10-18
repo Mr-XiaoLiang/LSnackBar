@@ -11,6 +11,7 @@ import android.widget.CheckBox;
 import android.widget.CompoundButton;
 
 import com.liang.lollipop.lsnackbar.LSnackBar;
+import com.liang.lollipop.lsnackbar.LToast;
 import com.liang.lollipop.lsnackbar.LToastUtil;
 
 public class MainActivity extends AppCompatActivity implements CheckBox.OnCheckedChangeListener,View.OnClickListener {

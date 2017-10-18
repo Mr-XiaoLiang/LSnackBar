@@ -37,6 +37,10 @@ public class LToast extends Toast {
         super(context);
     }
 
+    public static LToast makeText(Context context, CharSequence text,@Duration int duration){
+        return makeText(context,text,Color.WHITE,0x88000000,0,duration);
+    }
+
     /**
      * Make a standard toast that just contains a text view.
      *
