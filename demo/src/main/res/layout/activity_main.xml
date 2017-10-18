@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:paddingBottom="48dp"
+    android:background="#AAA">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_marginTop="24dp"
+            android:layout_height="?attr/actionBarSize"/>
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <CheckBox
+            android:id="@+id/local"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="局部显示"/>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="50dp"
+            android:background="#3F00"
+            android:layout_marginRight="10dp">
+            <TextView
+                android:id="@+id/snack_bar1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击出现Snackbar"
+                android:gravity="center"
+                android:padding="20dp"
+                android:minHeight="70dp"/>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="130dp"
+            android:background="#30F0"
+            android:layout_marginRight="20dp">
+            <TextView
+                android:layout_marginTop="50dp"
+                android:id="@+id/snack_bar2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击出现Snackbar"
+                android:gravity="center"
+                android:padding="20dp"
+                android:minHeight="100dp"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#300F"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp">
+                <TextView
+                    android:id="@+id/snack_bar_action"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="点击出现Snackbar\n带Action"
+                    android:gravity="center"
+                    android:padding="20dp"
+                    android:minHeight="50dp"/>
+            </FrameLayout>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:background="#30F0"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="bottom">
+            <TextView
+                android:id="@+id/toast"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="点击出现Toast"
+                android:gravity="center"
+                android:padding="10dp"/>
+        </FrameLayout>
+
+
+
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>
