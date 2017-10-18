@@ -6,6 +6,7 @@
 > 3. 支持头部添加小图标。
 > 4. 支持局部View内显示（需要FrameLayout）。
 > 5. 兼容支持同样式的Toast。
+> 6. 支持样式的自定义（颜色等属性）
 
 效果预览：
 [默认传统样式](https://github.com/Mr-XiaoLiang/LSnackBar/blob/master/gif/default.gif)
